@@ -1,4 +1,75 @@
-*{
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: azure;
+    display: grid;
+    grid-template-columns: repeat (8.33%);
+    grid-template-rows: 20% 30% 50% 10%;
+    grid-template-areas: 
+    "header header header header header header header header header header header header "
+    "carrusel carrusel carrusel carrusel carrusel carrusel carrusel carrusel buscador buscador buscador buscador"
+    "tipo tipo tipo tipo tipo tipo tipo tipo tipo tipo tipo tipo "
+    "footer footer footer footer footer footer footer footer footer footer footer footer "
+    ;
+    
+}
+
+.header {
+    grid-area: header;
+    background-color: red;
+    height: 30vh;
+}
+
+.carrusel {
+    grid-area: carrusel;
+    background-color: blue;
+    height: 30vh;
+}
+
+.buscador{
+    grid-area: buscador;
+    background-color: green;
+    height: 30vh;
+}
+
+
+
+.div_header {
+    height: 100px;
+    width: 100%;
+    
+}
+
+.div_buscador{
+   border: 1px solid black;
+   padding: 20px;
+   width: 20%;
+   
+   
+}
+
+.img_buscador{
+    height: 10%;
+    width: 10%;
+    float: right;
+    padding-bottom: 30px;
+}
+
+.div_grid {
+
+    display: inline-block;
+    border: 1px solid black;
+    height: 50vh;
+    width: 20%;
+}
+
+.div_grid img {
+
     width: 100%;
     height: 100%;
 }
